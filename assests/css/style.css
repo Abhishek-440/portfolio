@@ -1,0 +1,538 @@
+*{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --basecolor: white;
+    --btncolor: #1869ff;
+    --cntcolor: coral;
+}
+
+html{
+    background: rgb(255, 255, 255);
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden;
+
+}
+
+.PageWrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+/* .y.proximity-scroll-snapping {
+    scroll-snap-type: y proximity;
+}
+ */
+.header{
+    /* justify-content: space-between; */
+    padding: 2rem 5rem;
+    margin: 0px 0px 20px 0px;
+    position: fixed;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.98);
+    width: 100%;
+}
+
+.Logo{
+    /* float: left; */
+    letter-spacing: 5px;
+    display: inline-block;
+    /* margin-right: right; */
+}
+
+.navlinks{
+    float: right;
+    /* margin-right: right; */
+}
+.navlinks ul{
+    padding-top: 0.6rem;
+    list-style: none;
+    justify-content: space-between;
+}
+.navlinks li {
+    display: inline;
+    padding: 2rem;
+}
+
+.header li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 0rem 1rem;
+    letter-spacing: 0.3px;
+}
+
+.cntbtn {
+    margin-left: 1.5rem;
+    border: 1px solid coral;
+    border-radius: 1rem;
+    color: coral;
+}
+  
+.cntbtn:hover {
+    background: coral;
+    color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .header{
+        /* padding: 2rem 5rem; */
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .header .Logo h1{
+        font-size: 12px;
+        text-align: center;
+    }
+    .header li a{
+        padding: 0 0.5rem;
+        font-size: 10px;
+    }
+    .navlinks{
+        margin-left: 1.5rem;
+    }
+    .navlinks ul{
+        display: inline;
+        padding-top: 0;
+    }
+    .navlinks li {
+        display: inline;
+        padding: 0;
+    }
+
+    .cntbtn {
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        /* padding: 2rem 5rem; */
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .Logo h1{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.Title{
+    text-align: center;
+    padding-top: 2rem;
+    color: coral;
+}
+
+h1,h2,h3,h4,h5,h6,a,p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* p{
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    font-style: normal;
+} */
+
+.PageWrapper section {
+    width: 100vw;
+    /* height: 100vh */;
+    /* display: flex; */
+    /* scroll-snap-type: mandatory; */
+}
+
+.Banner{
+    justify-content: left;
+    width: 100%;
+    padding: 0 10rem 0 15rem;
+    /* scroll-snap-align: start; */
+    height: 100vh;
+}
+.Banner-text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 15rem;
+    /* height: 80%; */
+}
+
+.Banner-text p1{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: dimgray;
+}
+.Banner-text p2{
+    font-weight: 600; 
+    font-size: 2rem; 
+    padding-top: 1rem;
+}
+
+.Banner-text p3{
+    padding-top: 1rem;
+    font-weight: 400;
+}
+
+.cv-btn{
+    background: #1869ff;
+    box-shadow: 0 0 10px rgba(24, 105, 255, 0.5);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+.cv-btn:hover{
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Banner-text{
+        padding-top: 5rem;
+    }
+    .Banner-text p1{
+        font-size: 2rem;
+    }
+    .Banner{
+        padding: 0 3rem;
+    }
+    .Banner-text p2{
+        font-size: 1rem;
+    }
+    .Banner-text p3{
+        font-size: 0.6rem;
+    }
+    .Banner-text a button{
+        font-size: 0.5rem;
+    }
+}
+
+
+.About-me{
+    background: #0F172A;
+    justify-content: center;
+    opacity: 0.98;
+    width: 100%;
+    padding: 0 15rem;
+    height: 100vh;
+}
+
+.About-me .Title{
+    padding-bottom: 2rem;
+}
+
+.myimg{
+    display: flex;
+    float: right;
+    height: 60vh;
+    padding-top: 2rem;
+}
+
+.description{
+    height: 60%;
+    padding: 5rem 2.5rem;
+}
+
+.description p{
+    padding-bottom: 2rem;
+}
+
+.About-me .sociallinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+}
+
+.About-me p{
+    padding-top: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .About-me{
+        padding: 0 2rem 0 2rem;
+    }
+
+    .About-me .sociallinks{
+        padding: 4rem 2rem;
+    }
+    .myimg{
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    .description{
+        height: 50%;
+        padding: 2rem 1.5rem;
+    }
+
+    .description p{
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .About-me{
+        padding: 0 3rem 0 2rem;
+    }
+}
+
+.Skills{
+    justify-content: center;
+    width: 100%;
+    padding: 0 15rem;
+    /* height: 100vh; */
+}
+
+.Skills .Title{
+    padding-top: 8rem;
+}
+
+.skill_wrapper_cards {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skill_wrapper_cards .card {
+    flex: 1;
+    text-align: center;
+    margin: 1rem;
+    padding: 2.5em 1.5em;
+}
+
+.skill_wrapper_cards .card img {
+    height: 2rem;
+}
+
+.skill_wrapper_cards .card p {
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    padding-top: 1rem;
+}
+
+.skill_wrapper_cards .card:nth-child(2) {
+    background: #1869ff;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(24, 105, 255, 0.5);
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Skills{
+        padding: 0 2rem 0 2rem;
+    }
+
+    .Skills .Title{
+        padding-top: 2rem;
+    }
+
+    .skill_wrapper_cards {
+        padding-top: 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        /* -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal; */
+        padding-bottom: 2rem;
+    }
+
+    .skill_wrapper_cards .card h4,p{
+        font-size: 12px;
+    }
+
+    .skill_wrapper_cards .card img {
+        height: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .Skills{
+        padding: 0 0.5rem 0 0.5rem;
+    }
+    .skill_wrapper_cards .card {
+        padding: 1.5em 0.5em;
+    }
+}
+
+
+.Projects{
+    justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.projects_wrapper_cards {
+    padding-top: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    height: 90%;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+
+.projects_wrapper_cards .card img{
+    width: 325px;
+}
+
+.projects_wrapper_cards .card {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.projects_wrapper_cards .card:hover {
+    opacity: 0.8;
+}
+
+.projects_wrapper_cards .card:nth-child(2),
+.projects_wrapper_cards .card:nth-child(5) {
+    background: #1869ff;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .Projects{
+        padding: 0 2rem 0 2rem;
+    }
+    .projects_wrapper_cards {
+        padding-bottom: 5rem;
+    }
+
+}
+
+
+.Contact{
+    justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+    background-color: rgb(30 41 59);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+    width: 100%;
+    padding-top: 8rem;
+}
+
+input[type=email], textarea{
+    background-color: rgb(0, 0, 0);
+    color: rgb(203 213 225);
+    padding: 1rem;
+    margin: 2rem;
+    border: none;
+    font-size: 1rem;
+}
+
+input[type=email]{
+    width: 20%;
+}
+
+textarea{
+    width: 60%;
+    resize: none;
+}
+
+input[type=submit] {
+    background: #1869ff;
+    box-shadow: 0 0 10px rgba(24, 105, 255, 0.5);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #0f47af;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Contact{
+        padding: 0 2rem 0 2rem;
+    }
+    form{
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+    input[type=email]{
+        width: 100%;
+    }    
+    textarea{
+        width: 100%;
+    }
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 0, 0);
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+}
+  
+footer ul li a {
+    font-size: 0.7em;
+    padding: 0 1em;
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    font-size:0.6rem;
+    opacity: 0.5;
+    color: white;
+    
+}
+
+footer .copyright{
+    padding: 10px;
+}
